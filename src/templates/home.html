@@ -1,0 +1,19 @@
+{% extends 'admin/master.html' %}
+
+{% block body %}
+{{ super() }}
+<div class="Container">
+
+    <h1>Flask App</h1>
+  <br>
+    <p>
+        This is an app made with flask .
+    </p>
+    <br>
+    <p>
+        <a href="/products">open up my awsome app</a>
+    </p>
+  
+    <a class="btn btn-danger" href="/logout"><i class="glyphicon glyphicon-chevron-left"></i>Logout</a>
+</div>
+{% endblock body %}

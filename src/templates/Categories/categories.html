@@ -1,0 +1,24 @@
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Categorie Id</th>
+      <th scope="col">Categorie Name</th>
+      <th scope="col">Delete </th>
+     
+    </tr>
+  </thead>
+  <tbody>
+{% for categorie in categories %}
+
+    <tr>
+      <td>{{categorie.id}}</td>
+      <td>{{categorie.categorie_name}}</td>
+      <td><a href="/categorie/delete?id={{categorie.id}}"class="btn btn-danger" >Delete</a> </td>
+    </tr>
+    
+
+
+{% endfor %}
+</tbody>
+</table>
