@@ -10,9 +10,14 @@ class User(db.Model):
     email = db.Column(db.String(200), unique=True, nullable=False)
     password=db.Column(db.String(200), unique=False, nullable=False)
     is_admin=db.Column(db.Boolean, unique=False, nullable=False)
-    
     def is_authenticated(self):
         return True
+
+    def is_active(self):   
+        return True           
+
+    def is_anonymous(self):
+        return False          
 
     def get_id(self):         
         return str(self.id)

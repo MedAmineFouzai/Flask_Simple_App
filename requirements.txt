@@ -1,17 +1,33 @@
-# =============================================================================
-# DEPRECATION WARNING:
-#
-# The file `requirements.txt` does not influence the package dependencies and
-# will not be automatically created in the next version of PyScaffold (v4.x).
-#
-# Please have look at the docs for better alternatives
-# (`Dependency Management` section).
-# =============================================================================
-#
-# Add your pinned requirements so that they can be easily installed with:
-# pip install -r requirements.txt
-# Remember to also add them in setup.cfg but unpinned.
-# Example:
-# numpy==1.13.3
-# scipy==1.0
-#
+alembic==1.4.3
+bokeh==2.2.3
+certifi==2020.12.5
+click==7.1.2
+Flask==1.1.2
+Flask-Admin==1.5.7
+flask-file-upload==0.1.5
+Flask-Login==0.5.0
+Flask-Migrate==2.5.3
+Flask-Script==2.0.6
+Flask-SQLAlchemy==2.4.4
+itsdangerous==1.1.0
+Jinja2==2.11.2
+Mako==1.1.3
+MarkupSafe==1.1.1
+numpy==1.19.4
+packaging==20.8
+pandas==1.2.0
+Pillow==8.0.1
+PyMySQL==0.10.1
+pyparsing==2.4.7
+python-dateutil==2.8.1
+python-dotenv==0.15.0
+python-editor==1.0.4
+pytz==2020.5
+PyYAML==5.3.1
+six==1.15.0
+SQLAlchemy==1.3.22
+tornado==6.1
+typing-extensions==3.7.4.3
+Werkzeug==1.0.1
+wincertstore==0.2
+WTForms==2.3.3

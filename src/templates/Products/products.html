@@ -1,5 +1,8 @@
+{% extends "base.html" %}
 
-<table class="table table-bordered">
+{% block body %}
+  
+<table class="table table-bordered table-responsive">
   <thead>
     <tr>
       <th scope="col">Product Id</th>
@@ -21,12 +24,35 @@
         <td>{{product.id}}</td>
         <td>{{product.product_name}}</td>
         <td>{{product.product_price}}</td>
-        <!-- <td>{{product.product_image}}</td> -->
         <td><img src="../static/uploads/{{product.product_image}}" width="100" height="50"></td>
         <td>{{product.categorie_id}}</td>
-        <td><a href="/product/delete?id={{product.id}}"class="btn btn-danger" >Delete</a></td>
-        <td><a href="/product/update?id={{product.id}}"class="btn btn-primary" >Update</a></td>
+        <td><a href="/product/delete?id={{product.id}}" ><i class="fa fa-trash-o fa-2x" aria-hidden="true" style="color: black;"></i></a></td>
+        <td><a href="/product/update?id={{product.id}}"><i class="fa fa-pencil fa-2x" aria-hidden="true" style="color: black;"></i></a></td>
     </tr>
 {% endfor %}
 </tbody>
 </table>
+<a class="fl"  href="/product/create">
+<i class="fa fa-plus-circle fa-4x" aria-hidden="true"></i>
+</a>
+<style>
+  table td {
+    text-align: center; 
+ }
+ table th {
+  text-align: center; 
+}
+
+.fl{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	color:rgb(20, 20, 20);
+	border-radius:50px;
+	text-align:center;
+}
+
+</style> 
+{% endblock %}

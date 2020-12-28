@@ -1,7 +1,18 @@
+{% extends "base.html" %}
+{% block body %}
+<br>
+<div class="container border border-secondary" >
+<br>
 <form action="/categorie/create" method="POST">
     {% for field in form %}
+    <div class="form-group">
         {{ field.label() }}
-        {{ field()}}
+        {{ field(class_="form-control") }}
+    </div>
+    <br>
     {% endfor %}
-    <button type="submit">submit</button>
+    <button type="submit" class="btn btn-dark">submit</button>
  </form>
+ <br>
+</div>
+{% endblock %}

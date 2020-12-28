@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+{% block body %}
+
 
 <table class="table table-bordered">
   <thead>
@@ -14,7 +17,7 @@
     <tr>
       <td>{{categorie.id}}</td>
       <td>{{categorie.categorie_name}}</td>
-      <td><a href="/categorie/delete?id={{categorie.id}}"class="btn btn-danger" >Delete</a> </td>
+      <td><a href="/categorie/delete?id={{categorie.id}}" ><i class="fa fa-trash-o fa-2x" aria-hidden="true" style="color: black;"></i></a> </td>
     </tr>
     
 
@@ -22,3 +25,27 @@
 {% endfor %}
 </tbody>
 </table>
+<a class="fl"  href="/categorie/create">
+<i class="fa fa-plus-circle fa-4x" aria-hidden="true"></i>
+</a>
+<style>
+  table td {
+    text-align: center; 
+ }
+ table th {
+  text-align: center; 
+}
+
+.fl{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	color:rgb(20, 20, 20);
+	border-radius:50px;
+	text-align:center;
+}
+
+</style> 
+{% endblock %}
